@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style/style_log.css'>
+</head>
+<body>
+
+<div class="container" id="container">
+  <p class="login">Sign Up</p>
+  <div class="form">
+    <form method="post" onSubmit="window.location.reload()">
+      <div class="input">
+        <label for="username">Username</label>
+        <input autocomplete="off" type="text" id="username" name="username" placeholder="🙍‍♂️ Type your Username">
+      </div>
+      <div class="input">
+        <label for="password">Password</label>
+        <input autocomplete="off" type="password" id="password" name="password" placeholder="🔑 Type your Password">
+        <div class="forgot_password">
+            <p>Attention le mdp n'est pas hash donc mettre un truc osef :)</p>
+          </div>
+      </div>
+      <div class="input">
+        <label for="password">Password</label>
+        <input autocomplete="off" type="password" id="password" name="password" placeholder="🔑 Type again your Password">
+      </div>
+      <p class="erreur"><%= erreur %></p>
+      <input type="submit" value="SIGN UP" name="submit_form" id="submit_form">
+    </form>
+    <div class="sign_up">
+      <p id="On_sign">Return To Login</p>
+      <a href="/" id="SIGN_UP">Login Page</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

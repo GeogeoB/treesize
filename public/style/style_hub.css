@@ -1,0 +1,158 @@
+*{
+    margin : 0px;
+    padding: 0px;
+
+    font-family: system-ui;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    background-color: #1e2530;
+    color: white;
+    font-weight: bold;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.case{
+    width: 230px;
+    height: 300px;
+
+    margin: 5px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 233px);
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.img_grid{
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+    height: 240px;
+}
+
+.under_grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.text:hover{
+    text-decoration-line: underline;
+}
+
+.icon_rouage{
+    width: 25px;
+    height: 25px;
+    padding-right: 20px;
+    padding-top: 13px;
+}
+
+.icon_rouage:hover{
+    fill: rgb(83, 83, 172);
+}
+
+.add_button{
+    width: 100%;
+    height: 240px;
+    border: none;
+    font-size: 90px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+
+a:hover{
+    color: rgb(94, 94, 94);
+}
+
+.add_button:hover{
+    background-color: rgb(128, 235, 199)
+}
+
+.nouveau_projet{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.425);
+    z-index: 5;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    visibility : hidden;
+}
+
+form{
+    height: 150px;
+        width: 350px;
+        padding: 50px;
+        background-color: white;
+        border-radius: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+}
+
+input{
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #d9d9d9;
+    height: 35px;
+}
+
+input:focus{
+    outline: none;
+    background-color: rgb(247, 247, 247);
+
+
+    transition: background-color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin-bottom: 20px;
+}   
+
+#submit_form{
+    width: 100%;
+    border-radius: 100px;
+    margin-top: 20px;
+    height: 45px;
+
+    background: linear-gradient(90deg, rgba(105,211,220,1) 0%, rgba(231,59,240,1) 100%);
+    background-position: 0px;
+
+    font-weight: bold;
+    color: white;
+}
+
+#submit_form:hover{
+    background-position: 350px;
+
+    transition: background-position 0.7s cubic-bezier(0.77,0.2,0.05,1.0);
+}
